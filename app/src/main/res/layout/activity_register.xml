@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@android:color/black"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".registerActivity">
@@ -17,16 +16,15 @@
         android:layout_marginBottom="10dp"
         android:text="REGISTRATION"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp">
+        android:paddingTop="5dp">
 
         <TextView
             android:id="@+id/textView4"
@@ -34,8 +32,8 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="Service type: "
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -47,36 +45,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:button="@android:drawable/btn_radio"
                 android:padding="2dp"
                 android:text="Server"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:button="@android:drawable/btn_radio"
                 android:padding="2dp"
                 android:text="Customer"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
         </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
             android:text="Applier type: "
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -88,18 +87,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:button="@android:drawable/btn_radio"
                 android:padding="2dp"
                 android:text="Person"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
 
             <RadioButton
                 android:id="@+id/radioBInstitute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:button="@android:drawable/btn_radio"
                 android:padding="2dp"
                 android:text="Institution"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
         </RadioGroup>
     </LinearLayout>
 
@@ -115,8 +118,8 @@
             android:gravity="center_vertical"
             android:text="Contact Name:"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/contactName"
@@ -128,8 +131,8 @@
             android:hint="name"
             android:inputType="textPersonName"
             android:padding="3dp"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
 
     </LinearLayout>
@@ -141,8 +144,8 @@
         android:gravity="center_vertical"
         android:text="Present Address:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/black"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
 
 
     <EditText
@@ -155,8 +158,8 @@
         android:hint="Address"
         android:inputType="textPersonName"
         android:padding="3dp"
-        android:textColor="@android:color/black"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
     =
 
     <TextView
@@ -166,8 +169,8 @@
         android:gravity="center_vertical"
         android:text="Permanent Address:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/black"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/permanentAddress"
@@ -179,8 +182,8 @@
         android:hint="Address"
         android:inputType="textPersonName"
         android:padding="3dp"
-        android:textColor="@android:color/black"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -194,8 +197,8 @@
             android:gravity="center_vertical"
             android:text="Mobile:"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/mobile"
@@ -207,8 +210,8 @@
             android:hint="+8801XXXXXXXXX"
             android:inputType="number"
             android:padding="3dp"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
 
     </LinearLayout>
@@ -225,8 +228,8 @@
             android:gravity="center_vertical"
             android:text="Emai:"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/email"
@@ -238,8 +241,8 @@
             android:hint="enter mail id"
             android:inputType="textEmailAddress"
             android:padding="3dp"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
 
     </LinearLayout>
@@ -257,8 +260,8 @@
             android:gravity="center_vertical"
             android:text="User Name:"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/userName"
@@ -270,8 +273,8 @@
             android:hint="Enter an username"
             android:inputType="textPersonName"
             android:padding="3dp"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
 
     </LinearLayout>
@@ -289,8 +292,8 @@
             android:gravity="center_vertical"
             android:text="Password:"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/password"
@@ -302,8 +305,8 @@
             android:hint="Enter a password"
             android:inputType="textPassword"
             android:padding="3dp"
-            android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
 
     </LinearLayout>
@@ -314,7 +317,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@android:color/white"
-        android:text="Button" />
+        android:text="Button"
+        android:textColor="@color/colorPrimary" />
 
 
 </LinearLayout>

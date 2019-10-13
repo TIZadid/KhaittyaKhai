@@ -3,7 +3,9 @@ package i.t.khaittyakhai;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class registerActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class registerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
